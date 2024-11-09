@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "3191ab15-c6aa-43a8-899e-1ba721dab288",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17527323"
+	},
+	"item": [
+		{
+			"name": "Get API key",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user\",\n  \"password\": \"useruser\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.21.138.138:8000/api-token-auth/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"138",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"api-token-auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token 4ab1c53239bb2d4c010e84b5c7e6ec7d579cf25b",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"aaa\",\n  \"description\": \"aaaaaaaa\",\n  \"price\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.21.138.138:8000/products/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"138",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token 4ab1c53239bb2d4c010e84b5c7e6ec7d579cf25b",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"aaa\",\n  \"description\": \"aaaaaaaa\",\n  \"price\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.21.138.138:8000/products/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"138",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token 4ab1c53239bb2d4c010e84b5c7e6ec7d579cf25b",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"aaa\",\n  \"description\": \"aaaaaaaa\",\n  \"price\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.21.138.138:8000/products/1/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"138",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token 4ab1c53239bb2d4c010e84b5c7e6ec7d579cf25b",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"aaa\",\n  \"description\": \"aaaaaaaa\",\n  \"price\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.21.138.138:8000/products/1/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"138",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "Token 4ab1c53239bb2d4c010e84b5c7e6ec7d579cf25b",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"aaa\",\n  \"description\": \"aaaaaaaa\",\n  \"price\": 100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.21.138.138:8000/products/1/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"138",
+						"138"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
