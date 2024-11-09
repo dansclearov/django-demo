@@ -1,0 +1,7 @@
+<!-- templates/profile.html -->
+<h2>Profilul Meu</h2>
+<p>Bine ai venit, {{ user.username }}!</p>
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Deconectare</button>
+</form>
