@@ -24,13 +24,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.21.138.138:8000/api-token-auth/",
+					"raw": "http://localhost:8000/api-token-auth/",
 					"protocol": "http",
 					"host": [
-						"172",
-						"21",
-						"138",
-						"138"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
@@ -71,13 +68,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.21.138.138:8000/products/",
+					"raw": "http://localhost:8000/products/",
 					"protocol": "http",
 					"host": [
-						"172",
-						"21",
-						"138",
-						"138"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
@@ -121,13 +115,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.21.138.138:8000/products/",
+					"raw": "http://localhost:8000/products/",
 					"protocol": "http",
 					"host": [
-						"172",
-						"21",
-						"138",
-						"138"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
@@ -171,13 +162,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.21.138.138:8000/products/1/",
+					"raw": "http://localhost:8000/products/1/",
 					"protocol": "http",
 					"host": [
-						"172",
-						"21",
-						"138",
-						"138"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
@@ -219,13 +207,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.21.138.138:8000/products/1/",
+					"raw": "http://localhost:8000/products/1/",
 					"protocol": "http",
 					"host": [
-						"172",
-						"21",
-						"138",
-						"138"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
@@ -267,13 +252,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://172.21.138.138:8000/products/1/",
+					"raw": "http://localhost:8000/products/1/",
 					"protocol": "http",
 					"host": [
-						"172",
-						"21",
-						"138",
-						"138"
+						"localhost"
 					],
 					"port": "8000",
 					"path": [
